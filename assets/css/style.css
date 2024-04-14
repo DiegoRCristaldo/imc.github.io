@@ -95,7 +95,7 @@ footer{
     align-items: center;
     background-color: rgba(62, 61, 61, 0.85);
     padding: 15px;
-    height: 160px;
+    height: 158px;
 }
 div.redes{
     margin-top: 40px;
@@ -125,7 +125,7 @@ cite{
 320x480
 */
 @media (max-width: 321px) {
-    body{
+    body, div.redes{
         width: 320px;
     }
     main{
@@ -133,6 +133,7 @@ cite{
         background-image: url('../imagens/treino-celular.avif');
     }           
     h1{
+        height: 50;
         font-size: 20px;
     }
     form{
@@ -147,7 +148,7 @@ cite{
     }
 }
 @media (min-width: 322px) and (max-width: 376px) {
-    body{
+    body, div.redes{
         width: 375px;
     }
     main{
@@ -160,6 +161,7 @@ cite{
         height: 50px;
     }
     img.whats{
+        bottom: 15%;
         width: 30px;
         height: 30px;
     }
@@ -199,7 +201,6 @@ cite{
     }
     div.redes{
         margin-top: 20px;
-        width: 320px;
     }
     img.logo{
         width: 20px;
@@ -214,7 +215,7 @@ cite{
 420x320
 */
 @media (min-width: 377px) and (max-width: 426px) {
-    body{
+    body, div.redes{
         width: 425px;
     }
     main{
@@ -223,6 +224,7 @@ cite{
         margin: -20px 0;
     }           
     h1{
+        height: 60;
         font-size: 24px;
     }
     img.whats{
@@ -251,12 +253,12 @@ cite{
     footer{
         padding: 5px;
     }
-    div.redes{
-        width: 375px;
+    cite{
+        font-size: 16px;
     }
 }
 @media (min-width: 427px) and (max-width: 769px) {
-    body{
+    body, div.redes{
         width: 768px;
     }
     main{
@@ -265,7 +267,7 @@ cite{
     }           
     h1{
         font-size: 28px;
-        height: 50px;
+        height: 60px;
     }
     img.whats{
         width: 40px;
@@ -306,7 +308,6 @@ cite{
         height: 130px;
     }
     div.redes{
-        width: 425px;
         margin-top: 20px;
     }
     cite{
@@ -318,7 +319,7 @@ cite{
 768x1024
 */
 @media (min-width: 770px) and (max-width: 1025px) {
-    body{
+    body, div.redes{
         width: 1024px;
     }
     main{
@@ -368,7 +369,6 @@ cite{
         height: 130px;
     }
     div.redes{
-        width: 800px;
         margin-top: 30px;
     }
     cite{
