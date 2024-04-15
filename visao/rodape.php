@@ -1,5 +1,8 @@
           <section id="resultado"></section>
         </form>
+        <a href="https://api.whatsapp.com/send?phone=5519989909456&text=Gostaria%20de%20modernizar%20minha%20empresa%20com%20um%20site.">
+            <img class="whats" src="assets/imagens/whats.png"/>
+        </a>
       </main>
     </div>
     <footer>

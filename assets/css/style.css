@@ -7,12 +7,17 @@ body{
     height: auto;
     background-image: url('../imagens/fundo.avif');
 }
+body, footer, div.redes{
+    width: 1440px;
+    margin: 0 auto;
+}
 .principal, form, footer{
     display: flex;
     flex-direction: column;
 }
 main{
     position: relative;
+    z-index: 2;
     background-image: url('../imagens/treino.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -25,13 +30,6 @@ h1{
     color: #fff;
     background-color: rgba(62, 61, 61, 0.85);
     height: 126px;
-}
-img.whats{
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
 }
 h1, form, label, button, p{
     padding: 15px;
@@ -91,7 +89,17 @@ p{
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
+img.whats{
+    position: fixed;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    bottom: 5%;
+    right: 5%;
+}
 footer{
+    position: fixed;
+    bottom: 0;
     align-items: center;
     background-color: rgba(62, 61, 61, 0.85);
     padding: 15px;
@@ -121,19 +129,17 @@ cite{
     font-size: 24px;
     padding: 15px;
 }
-/*
-320x480
-*/
 @media (max-width: 321px) {
-    body, div.redes{
+    body, footer, div.redes{
         width: 320px;
     }
     main{
         background-size: 300px;
         background-image: url('../imagens/treino-celular.avif');
+        margin: -8px auto;
     }           
     h1{
-        height: 50;
+        height: 50px;
         font-size: 20px;
     }
     form{
@@ -146,9 +152,27 @@ cite{
     input, button{
         width: 200px;
     }
+    img.whats{
+        position: fixed;
+        bottom: 25%;
+        right: 5%;
+        width: 40px;
+        height: 40px;
+    }
+    footer{
+        padding: 5px;
+        height: 120px;
+    }
+    div.redes{
+        margin-top: 5px;
+    }
+    cite{
+        font-size: 12px;
+        padding: 15px 1px;
+    }
 }
 @media (min-width: 322px) and (max-width: 376px) {
-    body, div.redes{
+    body, footer, div.redes{
         width: 375px;
     }
     main{
@@ -211,11 +235,8 @@ cite{
         padding: 5px;
     }
 }
-/*
-420x320
-*/
-@media (min-width: 377px) and (max-width: 426px) {
-    body, div.redes{
+@media (min-width: 377px) and (max-width: 431px) {
+    body, footer, div.redes{
         width: 425px;
     }
     main{
@@ -224,7 +245,7 @@ cite{
         margin: -20px 0;
     }           
     h1{
-        height: 60;
+        height: 60px;
         font-size: 24px;
     }
     img.whats{
@@ -257,8 +278,8 @@ cite{
         font-size: 16px;
     }
 }
-@media (min-width: 427px) and (max-width: 769px) {
-    body, div.redes{
+@media (min-width: 432px) and (max-width: 769px) {
+    body, footer, div.redes{
         width: 768px;
     }
     main{
@@ -315,11 +336,8 @@ cite{
         padding: 8px;
     }
 }
-/*
-768x1024
-*/
 @media (min-width: 770px) and (max-width: 1025px) {
-    body, div.redes{
+    body, footer, div.redes{
         width: 1024px;
     }
     main{
